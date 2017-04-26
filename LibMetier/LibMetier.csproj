@@ -1,0 +1,54 @@
+﻿<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0C622FE8-3A0A-46EF-BEA6-3B47A5BA7F76}</ProjectGuid>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <UseMSBuildEngine>true</UseMSBuildEngine>
+    <OutputType>Library</OutputType>
+    <RootNamespace>LibMetier</RootNamespace>
+    <AssemblyName>LibMetier</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile111</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="MyClass.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Objets\Oeuf.cs" />
+    <Compile Include="Objets\Nourriture.cs" />
+    <Compile Include="Objets\Pheromone.cs" />
+    <Compile Include="Environnement\BoutDeTerrain.cs" />
+    <Compile Include="Environnement\Acces.cs" />
+    <Compile Include="Agents\Fourmi.cs" />
+    <Compile Include="Agents\Reine.cs" />
+    <Compile Include="Fabrique\FabriqueFourmiliere.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LibAbstraite\LibAbstraite.csproj">
+      <Project>{FBA43EBC-B932-48F0-830E-796D81835854}</Project>
+      <Name>LibAbstraite</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Agents\" />
+    <Folder Include="Environnement\" />
+    <Folder Include="Objets\" />
+    <Folder Include="Fabrique\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+</Project>

@@ -1,0 +1,29 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fourmiliere", "SimilateurFourmiliere\Fourmiliere.csproj", "{5C705A54-37E0-4BD4-A54C-2F42FB358BA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibAbstraite", "LibAbstraite\LibAbstraite.csproj", "{FBA43EBC-B932-48F0-830E-796D81835854}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibMetier", "LibMetier\LibMetier.csproj", "{0C622FE8-3A0A-46EF-BEA6-3B47A5BA7F76}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C705A54-37E0-4BD4-A54C-2F42FB358BA1}.Debug|x86.ActiveCfg = Debug|x86
+		{5C705A54-37E0-4BD4-A54C-2F42FB358BA1}.Debug|x86.Build.0 = Debug|x86
+		{5C705A54-37E0-4BD4-A54C-2F42FB358BA1}.Release|x86.ActiveCfg = Release|x86
+		{5C705A54-37E0-4BD4-A54C-2F42FB358BA1}.Release|x86.Build.0 = Release|x86
+		{FBA43EBC-B932-48F0-830E-796D81835854}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FBA43EBC-B932-48F0-830E-796D81835854}.Debug|x86.Build.0 = Debug|Any CPU
+		{FBA43EBC-B932-48F0-830E-796D81835854}.Release|x86.ActiveCfg = Release|Any CPU
+		{FBA43EBC-B932-48F0-830E-796D81835854}.Release|x86.Build.0 = Release|Any CPU
+		{0C622FE8-3A0A-46EF-BEA6-3B47A5BA7F76}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0C622FE8-3A0A-46EF-BEA6-3B47A5BA7F76}.Debug|x86.Build.0 = Debug|Any CPU
+		{0C622FE8-3A0A-46EF-BEA6-3B47A5BA7F76}.Release|x86.ActiveCfg = Release|Any CPU
+		{0C622FE8-3A0A-46EF-BEA6-3B47A5BA7F76}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
